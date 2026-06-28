@@ -12,6 +12,7 @@ test("supportedModules includes all requested entrypoints", () => {
   expect(supportedModules).toContain("circuit-json-to-gerber")
   expect(supportedModules).toContain("circuit-to-canvas")
   expect(supportedModules).toContain("circuit-to-svg")
+  expect(supportedModules).toContain("kicad-to-circuit-json")
 })
 
 test("getImportUrl uses jscdn bundled ESM imports", () => {
