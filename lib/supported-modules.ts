@@ -13,6 +13,7 @@ import type * as CircuitJsonToStepModule from "./type-bundles/circuit-json-to-st
 import type * as CircuitJsonToTscircuitModule from "./type-bundles/circuit-json-to-tscircuit"
 import type * as CircuitToCanvasModule from "./type-bundles/circuit-to-canvas"
 import type * as CircuitToSvgModule from "./type-bundles/circuit-to-svg"
+import type * as KicadToCircuitJsonModule from "./type-bundles/kicad-to-circuit-json"
 
 export const supportedModules = [
   "circuit-json-to-bom-csv",
@@ -30,6 +31,7 @@ export const supportedModules = [
   "circuit-json-to-tscircuit",
   "circuit-to-canvas",
   "circuit-to-svg",
+  "kicad-to-circuit-json",
 ] as const
 
 export type SupportedModuleName = (typeof supportedModules)[number]
@@ -53,6 +55,7 @@ export interface SupportedModuleMap {
   "circuit-json-to-tscircuit": typeof CircuitJsonToTscircuitModule
   "circuit-to-canvas": typeof CircuitToCanvasModule
   "circuit-to-svg": typeof CircuitToSvgModule
+  "kicad-to-circuit-json": typeof KicadToCircuitJsonModule
 }
 
 export type StripVersion<TSpecifier extends string> =

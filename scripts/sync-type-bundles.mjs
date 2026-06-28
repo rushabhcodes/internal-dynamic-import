@@ -18,6 +18,7 @@ const supportedModules = [
   "circuit-json-to-tscircuit",
   "circuit-to-canvas",
   "circuit-to-svg",
+  "kicad-to-circuit-json",
 ]
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")

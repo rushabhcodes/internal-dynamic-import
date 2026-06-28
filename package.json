@@ -43,6 +43,7 @@
     "circuit-json-to-tscircuit": "0.0.14",
     "circuit-to-canvas": "0.0.94",
     "circuit-to-svg": "0.0.339",
+    "kicad-to-circuit-json": "0.0.98",
     "tsup": "8.5.1",
     "typescript": "5.9.3"
   }
