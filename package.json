@@ -28,6 +28,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.0.5",
     "@types/bun": "latest",
+    "circuit-json-to-3d-png": "0.0.7",
     "circuit-json-to-bom-csv": "0.0.8",
     "circuit-json-to-bpc": "0.0.13",
     "circuit-json-to-connectivity-map": "0.0.23",

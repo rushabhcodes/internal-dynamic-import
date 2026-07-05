@@ -3,6 +3,7 @@ import path from "node:path"
 import { fileURLToPath } from "node:url"
 
 const supportedModules = [
+  "circuit-json-to-3d-png",
   "circuit-json-to-bom-csv",
   "circuit-json-to-bpc",
   "circuit-json-to-connectivity-map",

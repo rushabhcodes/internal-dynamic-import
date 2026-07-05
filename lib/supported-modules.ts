@@ -1,3 +1,4 @@
+import type * as CircuitJsonTo3dPngModule from "./type-bundles/circuit-json-to-3d-png"
 import type * as CircuitJsonToBomCsvModule from "./type-bundles/circuit-json-to-bom-csv"
 import type * as CircuitJsonToBpcModule from "./type-bundles/circuit-json-to-bpc"
 import type * as CircuitJsonToConnectivityMapModule from "./type-bundles/circuit-json-to-connectivity-map"
@@ -16,6 +17,7 @@ import type * as CircuitToSvgModule from "./type-bundles/circuit-to-svg"
 import type * as KicadToCircuitJsonModule from "./type-bundles/kicad-to-circuit-json"
 
 export const supportedModules = [
+  "circuit-json-to-3d-png",
   "circuit-json-to-bom-csv",
   "circuit-json-to-bpc",
   "circuit-json-to-connectivity-map",
@@ -40,6 +42,7 @@ export type SupportedModuleSpecifier =
   | `${SupportedModuleName}@${string}`
 
 export interface SupportedModuleMap {
+  "circuit-json-to-3d-png": typeof CircuitJsonTo3dPngModule
   "circuit-json-to-bom-csv": typeof CircuitJsonToBomCsvModule
   "circuit-json-to-bpc": typeof CircuitJsonToBpcModule
   "circuit-json-to-connectivity-map": typeof CircuitJsonToConnectivityMapModule
