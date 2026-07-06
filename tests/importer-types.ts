@@ -1,6 +1,9 @@
 import importer, { getDynamicModuleRegistry } from "lib/index"
 
 async function verifyTyping() {
+  const png3d = await importer("circuit-json-to-3d-png")
+  png3d.renderCircuitJsonTo3dPng
+
   const gerber = await importer("circuit-json-to-gerber")
   gerber.convertSoupToGerberCommands
 

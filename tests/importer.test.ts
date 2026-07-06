@@ -9,6 +9,7 @@ import importer, {
 } from "lib/index"
 
 test("supportedModules includes all requested entrypoints", () => {
+  expect(supportedModules).toContain("circuit-json-to-3d-png")
   expect(supportedModules).toContain("circuit-json-to-gerber")
   expect(supportedModules).toContain("circuit-to-canvas")
   expect(supportedModules).toContain("circuit-to-svg")
@@ -16,6 +17,9 @@ test("supportedModules includes all requested entrypoints", () => {
 })
 
 test("getImportUrl uses jscdn bundled ESM imports", () => {
+  expect(getImportUrl("circuit-json-to-3d-png")).toBe(
+    "https://jscdn.tscircuit.com/circuit-json-to-3d-png/latest/+esm",
+  )
   expect(getImportUrl("circuit-json-to-gerber")).toBe(
     "https://jscdn.tscircuit.com/circuit-json-to-gerber/latest/+esm",
   )
